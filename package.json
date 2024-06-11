@@ -18,13 +18,7 @@
     "express": "^4.19.2",
     "helmet": "^7.1.0",
     "http": "^0.0.1-security",
-    "http-proxy": "^1.18.1",
     "mongoose": "^8.4.1",
-    "puppeteer": "^22.10.0",
-    "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-adblocker": "^2.13.6",
-    "puppeteer-extra-plugin-anonymize-ua": "^2.4.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "request": "^2.88.2"
   }
 }
