@@ -3,6 +3,9 @@ import cors from "cors";
 import helmet from "helmet";
 import hotelRoutes from "./src/routes/hotelRoutes.js";
 import connect from "./src/utils/connect.js";
+import {config} from 'dotenv';
+
+config();
 
 const PORT = process.env.PORT || 8800;
 
@@ -16,8 +19,7 @@ app.use(
 );
 (async () => {
   connect(
-    "mongodb+srv://admin:1990xe98@cluster0.b86j3.mongodb.net/halaldb?retryWrites=true&w=majority&appName=Cluster0"
-  );
+    process.env.MONGO_URI  );
 })();
 app.use("/api/v1/hotels", hotelRoutes);
 
